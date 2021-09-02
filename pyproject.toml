@@ -7,6 +7,9 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8,<3.9"
+"discord.py" = "^1.7.3"
+PyNaCl = "^1.4.0"
+youtube_dl = "^2021.6.6"
 
 [tool.poetry.dev-dependencies]
 poethepoet = "^0.10.0"
@@ -14,9 +17,6 @@ flake8 = "^3.9.2"
 black = "^21.6b0"
 isort = "^5.9.2"
 mypy = "^0.910"
-jupyterlab = "^3.1.9"
-pytest = "^6.2.4"
-mlflow = "^1.20.1"
 
 [tool.poe.tasks]
 mkl = "pip3 install -I --no-binary :all: numpy scipy"

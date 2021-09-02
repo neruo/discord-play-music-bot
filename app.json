@@ -1,0 +1,10 @@
+{
+    "name": "discord-choice-bot",
+    "description": "Heroku経由でRandom Choiceを行うDiscord Bot",
+    "repository": "https://github.com/neruo/discord-choice-bot",
+    "keywords": [
+        "python",
+        "discord",
+        "bot"
+    ]
+}

@@ -1,0 +1,14 @@
+aiohttp==3.7.4.post0; python_version >= "3.6" and python_full_version >= "3.5.3"
+async-timeout==3.0.1; python_version >= "3.6" and python_full_version >= "3.5.3"
+attrs==21.2.0; python_version >= "3.6" and python_full_version >= "3.5.3"
+cffi==1.14.6; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.4.0"
+chardet==4.0.0; python_version >= "3.6" and python_full_version >= "3.5.3"
+discord.py==1.7.3; python_full_version >= "3.5.3"
+idna==3.2; python_version >= "3.6" and python_full_version >= "3.5.3"
+multidict==5.1.0; python_version >= "3.6" and python_full_version >= "3.5.3"
+pycparser==2.20; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.4.0"
+pynacl==1.4.0; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.4.0")
+six==1.16.0; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.4.0"
+typing-extensions==3.10.0.2; python_version >= "3.6" and python_full_version >= "3.5.3"
+yarl==1.6.3; python_version >= "3.6" and python_full_version >= "3.5.3"
+youtube-dl==2021.6.6

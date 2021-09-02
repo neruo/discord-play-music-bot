@@ -1,6 +1,6 @@
-# python3-dev-template
+# Discord play music bot
 
-A template repository for python3 development
+Discord bot playing music
 
 ## Directory
 
