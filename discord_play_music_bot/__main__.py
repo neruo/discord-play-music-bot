@@ -17,6 +17,7 @@ import itertools
 import math
 import os
 import random
+import subprocess
 
 import discord
 import youtube_dl
@@ -695,6 +696,9 @@ async def on_ready():
 
 
 if __name__ == "__main__":
+    subprocess.Popen("ffmpeg -version")
+    subprocess.Popen("ffplay -version")
+    subprocess.Popen("ffprobe -version")
     TOKEN: str = os.environ["DISCORD_BOT_TOKEN"]
     bot.run(TOKEN)
 
