@@ -281,7 +281,8 @@ class VoiceState:
                         self.current = await self.songs.get()
                 except asyncio.TimeoutError:
                     recommended_urls = []
-                    if len(asyncio.Task.all_tasks()) % 2 == 0:
+                    # if len(asyncio.Task.all_tasks()) % 2 == 0:
+                    if len(asyncio.all_tasks()) % 2 == 0:
                         recommended_urls.append(
                             f"https://www.youtube.com/watch?v=N1BcpzPGlYQ"
                         )  # デフォルト曲1
