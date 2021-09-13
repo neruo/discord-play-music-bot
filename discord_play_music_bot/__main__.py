@@ -748,6 +748,8 @@ if __name__ == "__main__":
 # autoplay機能が有効な場合、5回までデフォルト曲を流すように変更しました。
 # 5回以内に曲リクエストがなければ、3分待ってボイスチャットを抜けるように変更しました。
 #
-#
-#
-#
+# 2021/9/13
+# Herokuを使って常時立ち上げるように設定しました。
+# heroku用のffmpegとheorku用のlibopusが必要。
+# https://elements.heroku.com/buildpacks/xrisk/heroku-opus
+# 
