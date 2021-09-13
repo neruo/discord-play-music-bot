@@ -1,1 +1,1 @@
-web: python discord_play_music_bot/__main__.py
+worker: python discord_play_music_bot/__main__.py
