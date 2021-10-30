@@ -223,7 +223,7 @@ class VoiceState:
         self.songs = SongQueue()
 
         self._loop = False
-        self._volume = 0.08
+        self._volume = 0.02
         self.skip_votes = set()
 
         ### henkou tyop ###
