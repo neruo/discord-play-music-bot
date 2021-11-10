@@ -277,19 +277,25 @@ class VoiceState:
 
             if self.autoplay:
                 try:
-                    async with timeout(10):  # 10秒
+                    async with timeout(3):  # 3秒
                         self.current = await self.songs.get()
                 except asyncio.TimeoutError:
-                    recommended_urls = []
-                    # if len(asyncio.Task.all_tasks()) % 2 == 0:
-                    if len(asyncio.all_tasks()) % 2 == 0:
-                        recommended_urls.append(
-                            f"https://www.youtube.com/watch?v=N1BcpzPGlYQ"
-                        )  # デフォルト曲1
-                    else:
-                        recommended_urls.append(
-                            f"https://www.youtube.com/watch?v=uRSvcUozBOc"
-                        )  # デフォルト曲2
+                    default_music_url_list = [
+                        "https://youtu.be/Lwlunrt_v0E",  # YOASOBI Playlist 2021
+                        "https://youtu.be/yxHZXhxjWgM",  # JPOPメドレー 2021
+                        "https://youtu.be/MWTJ5VpQmqw",  # 洋楽メドレー 2021
+                    ]
+                    recommended_urls = [default_music_url_list[random.randint(0, 2)]]
+
+                    # # if len(asyncio.Task.all_tasks()) % 2 == 0:
+                    # if len(asyncio.all_tasks()) % 2 == 0:
+                    #     recommended_urls.append(
+                    #         f"https://www.youtube.com/watch?v=N1BcpzPGlYQ"
+                    #     )  # デフォルト曲1
+                    # else:
+                    #     recommended_urls.append(
+                    #         f"https://www.youtube.com/watch?v=uRSvcUozBOc"
+                    #     )  # デフォルト曲2
                     ctx = self._ctx
 
                     async with ctx.typing():
@@ -752,4 +758,4 @@ if __name__ == "__main__":
 # Herokuを使って常時立ち上げるように設定しました。
 # heroku用のffmpegとheorku用のlibopusが必要。
 # https://elements.heroku.com/buildpacks/xrisk/heroku-opus
-# 
+#
